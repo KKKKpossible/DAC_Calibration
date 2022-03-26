@@ -6,13 +6,7 @@
  */
 
 
-#include "hw_def.h"
-#include "gpio.h"
-#include "dma.h"
-#include "i2c.h"
-#include "spi.h"
-#include "usart.h"
-#include "tim.h"
+#include "hw.h"
 
 
 void hwInit(void)
@@ -25,4 +19,6 @@ void hwInit(void)
     MX_SPI1_Init();
     MX_USART1_UART_Init();
     MX_TIM1_Init();
+
+    ssd1306_Init();
 }
